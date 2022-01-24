@@ -39,18 +39,16 @@ fun CarActionsView(carViewModel: CarViewModel) {
             verticalAlignment = Alignment.Top,
         ) { page ->
             if (page == 0) {
-                CarActionsPageItem(
+                DoorsAndEngineSectionsView(
                     page = page,
-                    pagePageItems = ArrayList(
-                        listOf(
-                            DoorsItemModel(
-                                lockIcon = R.drawable.ic_act_lock,
-                                unLockIcon = R.drawable.ic_act_unlock
-                            ),
-                            EngineItemModel(
-                                firstEngineText = "START",
-                                secondEngineText = "STOP"
-                            )
+                    sectionItemPair = Pair(
+                        DoorsItemModel(
+                            lockIcon = R.drawable.ic_act_lock,
+                            unLockIcon = R.drawable.ic_act_unlock
+                        ),
+                        EngineItemModel(
+                            firstEngineText = "START",
+                            secondEngineText = "STOP"
                         )
                     ),
                     carViewModel = carViewModel

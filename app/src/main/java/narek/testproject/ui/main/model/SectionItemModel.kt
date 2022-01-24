@@ -2,16 +2,16 @@ package narek.testproject.ui.main.model
 
 import androidx.annotation.DrawableRes
 
-open class PageItemModel(
+open class SectionItemModel(
     var defaultTitle: String,
 )
 
 class DoorsItemModel(
     @DrawableRes val lockIcon: Int,
     @DrawableRes val unLockIcon: Int,
-) : PageItemModel("Doors")
+) : SectionItemModel("Doors")
 
 class EngineItemModel(
     val firstEngineText: String,
     val secondEngineText: String
-) : PageItemModel("Engine")
+) : SectionItemModel("Engine")

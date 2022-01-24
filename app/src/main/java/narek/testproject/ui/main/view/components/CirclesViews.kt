@@ -10,6 +10,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import narek.testproject.ui.main.viewmodel.CarViewModel
 
 @Composable
 fun CirclesViews(
